@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             body{
+                background-color: khaki;
+            }
+            
+            input[type="text"]{
+                width: 83%;
+                height: 100%;
+                border: none;
+                padding: 10px;
+                font-weight: bold;
+            }
+            table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, td, th {
+  border: 1px solid black;
+  text-align: center;
+}
+td{
+    height: 5vh;
+    font-size: 22px;
+    background-color: whitesmoke;
+}
+th{
+    background-color: gray;
+    color: white;
+}
+.section{
+    list-style-type: none;
+padding: 0;
+margin: 0;
+text-align: left;
+width: 50%;
+float: left;
+margin-bottom: 1%;
+margin-top: 1%;
+font-size: 23px;
+}
+.time{
+    list-style-type: none;
+padding: 0;
+margin: 0;
+margin-top: 1%;
+margin-bottom: 1%;
+text-align: right;
+width: 47%;
+float: right;
+font-size: 23px;
+}
+button{
+    border: none;
+    background-color: gray;
+    color: white;
+    width: 8%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Bahnschrift;
+}
+button:hover{
+     border: none;
+    background-color: darkgrey;
+    color: white;
+    width: 8%;
+    height: 40px;
+    font-size: 15px;
+}
+</style>
+    </head>
+    <body>
+        <div style="margin-top: 10%;">
+        <div>
+            <div class="section"><strong>Section C: Mental Calculation</strong></div>
+            <div class="time">
+    <div id="timer" style="visibility:visible;float: left;"></div>
+                <strong>Time Limit: 3 Mins.</strong></div></div>
+        <div><center>
+                <table border="1">
+                    <tr>
+                        <th style="width: 5%;font-size: 20px;">NO</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                    </tr>
+                    <tr>
+                        <th style="font-size: 60px;">C</th>
+                        <td><br>1<br>2<br>1</td>
+                        <td><br>5<br>3<br>1</td>
+                        <td><br>5<br>4<br>-5</td>
+                        <td><br>6<br>3<br>-4</td>
+                        <td><br>2<br>7<br>-6</td>
+                        <td><br>8<br>-3<br>-5</td>
+                        <td><br>1<br>6<br>1</td>
+                        <td><br>3<br>6<br>-7</td>
+                        <td><br>4<br>5<br>-7</td>
+                        <td><br>2<br>5<br>-6</td>
+                    </tr>
+                    <tr>
+                        <th style="font-size: 20px;">ANS</th>
+                        <td><input type="text" id='num10' maxlength="3"></td>
+                        <td><input type="text" id='num11' maxlength="3"></td>
+                        <td><input type="text" id='num12' maxlength="3"></td>
+                        <td><input type="text" id='num13' maxlength="3"></td>
+                        <td><input type="text" id='num14' maxlength="3"></td>
+                        <td><input type="text" id='num15' maxlength="3"></td>
+                        <td><input type="text" id='num16' maxlength="3"></td>
+                        <td><input type="text" id='num17' maxlength="3"></td>
+                        <td><input type="text" id='num18' maxlength="3"></td>
+                        <td><input type="text" id='num19' maxlength="3"></td>
+                    </tr>
+                </table>
+                <br>
+                <button onclick="input2();">SUBMIT</button>
+            </center></div></div>
+        <script>
+            function input2() {
+  document.getElementById("num10").disabled = true;
+  document.getElementById("num11").disabled = true;
+  document.getElementById("num12").disabled = true;
+  document.getElementById("num13").disabled = true;
+  document.getElementById("num14").disabled = true;
+  document.getElementById("num15").disabled = true;
+  document.getElementById("num16").disabled = true;
+  document.getElementById("num17").disabled = true;
+  document.getElementById("num18").disabled = true;
+  document.getElementById("num19").disabled = true;
+}
+// countdown for 3mins
+  var sec         = 180,
+    countDiv    = document.getElementById("timer"),
+    secpass,
+    countDown   = setInterval(function () {
+        'use strict';
+        
+        secpass();
+    }, 1000);
+
+function secpass() {
+    'use strict';
+    
+    var min     = Math.floor(sec / 60),
+        remSec  = sec % 60;
+    
+    if (remSec < 10) {
+        
+        remSec = '0' + remSec;
+    
+    }
+    if (min < 10) {
+        
+        min = '0' + min;
+    
+    }
+    countDiv.innerHTML = min + ":" + remSec;
+    
+    if (sec > 0) {
+        
+        sec = sec - 1;
+        
+    } else {
+        
+        clearInterval(countDown);
+
+   
+      
+  document.getElementById("num10").disabled = true;
+  document.getElementById("num11").disabled = true;
+  document.getElementById("num12").disabled = true;
+  document.getElementById("num13").disabled = true;
+  document.getElementById("num14").disabled = true;
+  document.getElementById("num15").disabled = true;
+  document.getElementById("num16").disabled = true;
+  document.getElementById("num17").disabled = true;
+  document.getElementById("num18").disabled = true;
+  document.getElementById("num19").disabled = true;
+    }
+    }
+</script>
+    </body>
+</html>
