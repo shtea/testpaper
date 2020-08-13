@@ -6,155 +6,333 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title> Grading Examination</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <style>
-            body{
-                background-color: khaki;
+            h2{
+                margin-bottom: 0;
             }
-            
-            input[type="text"]{
-                width: 83%;
+            h4{
+                margin: 0;
+            }
+            h3{
+                margin: 0.5%;
+            }
+            #heading{
+                margin: 0;
+                width: 100%;
+                height: 30px;
+                color: white;
+                background-color: black;
+                font-size: 25px;
+            }
+            #time{
+                font-size: 22px;
+                margin-bottom: 2%;
+                margin-left: 3%;
+            }
+            table {
+                border-collapse: collapse;
+                width: 98%;
+                align-content: center;
+             }
+             table, td, th {
+                border: 1px solid black;
+                text-align: center;
+             }
+             th{
+               background-color: gray;
+               color: white;
+            }
+            td{
+                background-color: whitesmoke;
+                /*font-weight: bold;*/
+            }
+             input[type="number"]{
+                width: 91%;
                 height: 100%;
                 border: none;
                 padding: 10px;
                 font-weight: bold;
             }
-            table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-table, td, th {
-  border: 1px solid black;
-  text-align: center;
-}
-td{
-    height: 5vh;
-    font-size: 22px;
-    background-color: whitesmoke;
-}
-th{
-    background-color: gray;
-    color: white;
-}
-.section{
-    list-style-type: none;
-padding: 0;
-margin: 0;
-text-align: left;
-width: 50%;
-float: left;
-margin-bottom: 1%;
-margin-top: 1%;
-font-size: 23px;
-}
-.time{
-    list-style-type: none;
-padding: 0;
-margin: 0;
-margin-top: 1%;
-margin-bottom: 1%;
-text-align: right;
-width: 47%;
-float: right;
-font-size: 23px;
-}
-button{
-    border: none;
-    background-color: gray;
-    color: white;
-    width: 8%;
-    height: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Bahnschrift;
-}
-button:hover{
-     border: none;
-    background-color: darkgrey;
-    color: white;
-    width: 8%;
-    height: 40px;
-    font-size: 15px;
-}
-</style>
+            .t1{
+                border-collapse: collapse;
+                width: 63%;
+                align-content: center;
+            }
+            .t1,.t2{
+                border: 1px solid black;
+                text-align: center;
+            }
+            .t3{
+                border: 0;
+            }
+            button{
+               border: none;
+               background-color: gray;
+               color: white;
+               width: 8%;
+               height: 40px;
+               font-size: 15px;
+               font-weight: bold;
+            }
+            button:hover{
+                border: none;
+                background-color: darkgrey;
+                color: white;
+                width: 8%;
+                height: 40px;
+                font-size: 15px;
+            }
+            
+        </style>
     </head>
     <body>
-        <div style="margin-top: 8%;">
-            <div>
-                <div class="section"><strong>Section B: Abacus Calculation</strong></div>
-            <div class="time">
-    <div id="timer" style="visibility:visible;float: left;"></div>
-                <strong>Time Limit: 5 Mins.</strong></div>
+        <div>
+            <center>
+            <h2>UCMAS INTERNATIONAL GRADING EXAMINATION</h2><br>
+            <h4>GLOBAL ABACUS & MENTAL ARITHMETIC ASSOCIATION (GAMA)</h4>
+            <div id="heading"><b>ABACUS (ZHUSHUAN)</b></div>
+            <h3><b>GRADE 4</b></h3>
+            </center>
         </div>
- 
-            <div><center>
-                    <form action="">
-                <table border="1">
-                    <tr >
-                        <th style="width: 5%;font-size: 20px;">NO</th>
+        <div id="time"><b>Time Limit: 20 mins</b></div><div id="timer" style="visibility:hidden;float: left;"></div>
+        <div>
+            <label style="font-size: 18px;margin-left: 1%;"><b>Addition/Subtraction</b></label>
+            <center>
+            <table>
+                <tr>
+                    <th style="width: 5%;font-size: 20px;">NO</th>
                         <th>1</th>
                         <th>2</th>
                         <th>3</th>
                         <th>4</th>
                         <th>5</th>
+                        
+                </tr>
+                <tr>
+                    <td>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</td>
+                    <td>4,084<br>581<br>6,22,195<br>652<br>7,928<br>419<br>56,068<br>3,758<br>4,076<br>166<br>50,868<br>699<br>5,66,116<br>919<br>1,430</td>
+                    <td>207<br>4,928<br>-777<br>346<br>1,93,853<br>-161<br>996<br>34,779<br>-1,205<br>6,527<br>5,948<br>-553<br>85,364<br>-4,757<br>5,22,981</td>
+                    <td>3,11,485<br>5,772<br>911<br>18,486<br>396<br>285<br>2,61,210<br>4,699<br>281<br>79,613<br>3,189<br>423<br>591<br>9,593<br>8,058</td>
+                    <td>577<br>89,061<br>-3,281<br>402<br>8,518<br>-435<br>51,692<br>-151<br>9,849<br>7,162<br>-820<br>3,66,391<br>-225<br>6,08,159<br>2,093</td>
+                    <td>15,432<br>125<br>1,981<br>7,794<br>484<br>45,726<br>755<br>1,115<br>781<br>623<br>3,834<br>2,40,655<br>295<br>8,87,694<br>2,912</td>
+                </tr>
+                <tr>
+                    <th>ANS</th>
+                    <td><input type="number" id="n1"></td>
+                    <td><input type="number" id="n2"></td>
+                    <td><input type="number" id="n3"></td>
+                    <td><input type="number" id="n4"></td>
+                    <td><input type="number" id="n5"></td>
+                </tr>
+            </table>
+            <br>
+            <table border="1">
+                <tr>
+                    <th style="width: 5%;font-size: 20px;">NO</th>
                         <th>6</th>
                         <th>7</th>
                         <th>8</th>
                         <th>9</th>
                         <th>10</th>
-                    </tr>
-                    <tr>
-                        <th style="font-size: 60px;">B</th>
-                        <td><br>2 <br>5<br>-6<br>3</td>
-                        <td><br>4<br>8<br>3<br>2</td>
-                        <td><br>3<br>4<br>9<br>-2</td>
-                        <td><br>6<br>4<br>7<br>6</td>
-                        <td><br>9<br>2<br>4<br>7</td>
-                        <td><br>7<br>5<br>3<br>-1</td>
-                        <td><br>6<br>-3<br>6<br>1</td>
-                        <td><br>8<br>-4<br>1<br>8</td>
-                        <td><br>4<br>5<br>3<br>1</td>
-                        <td><br>1<br>8<br>6<br>6</td>
-                    </tr>
-                    <tr>
-                        <th style="font-size: 20px;">ANS</th>
-                        <td><input type="text" id='num' maxlength="3"></td>
-                        <td><input type="text" id='num1' maxlength="3"></td>
-                        <td><input type="text" id='num2' maxlength="3"></td>
-                        <td><input type="text" id='num3' maxlength="3"></td>
-                        <td><input type="text" id='num4' maxlength="3"></td>
-                        <td><input type="text" id='num5' maxlength="3"></td>
-                        <td><input type="text" id='num6' maxlength="3"></td>
-                        <td><input type="text" id='num7' maxlength="3"></td>
-                        <td><input type="text" id='num8' maxlength="3"></td>
-                        <td><input type="text" id='num9' maxlength="3"></td>
-                    </tr>
-                </table>
-                <br>
-                    </form>
-                    <button id='btn1' onclick="input1();">SUBMIT</button>
-</center></div>
+                        
+                </tr>
+                <tr>
+                    <td>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</td>
+                    <td>7,192<br>794<br>2,756<br>652<br>424<br>8,200<br>62,479<br>7,065<br>619<br>13,440<br>7,093<br>3,66,213<br>142<br>811<br>5,48,366</td>
+                    <td>68,300<br>956<br>3,339<br>-48,065<br>9,702<br>-117<br>802<br>9,33,864<br>-9,384<br>727<br>1,84,594<br>-962<br>1,428<br>-116<br>1,808</td>
+                    <td>3,54,206<br>7,252<br>796<br>813<br>33,992<br>2,553<br>362<br>46,434<br>2,828<br>857<br>9,042<br>5,339<br>4,93,144<br>256<br>584</td>
+                    <td>2,789<br>718<br>-465<br>8,33,674<br>8,870<br>-6,49,488<br>328<br>8,974<br>-262<br>8,445<br>2,372<br>-308<br>1,997<br>-565<br>92,786</td>
+                    <td>996<br>3,20,312<br>117<br>4,302<br>232<br>4,704<br>99,385<br>493<br>679<br>29,937<br>8,519<br>2,26,289<br>549<br>7,948<br>4,879</td>
+                </tr>
+                <tr>
+                    <th>ANS</th>
+                    <td><input type="number" id="n6"></td>
+                    <td><input type="number" id="n7"></td>
+                    <td><input type="number" id="n8"></td>
+                    <td><input type="number" id="n9"></td>
+                    <td><input type="number" id="n10"></td>
+                </tr>
+            </table>
+            <br><br>
+            <label style="font-size: 18px;"><b>Multiplication &nbsp; Round to 2 decimal places</b></label>
+            <table class="t1">
+            <tr class="t2">
+                    <th>1</th>
+                    <td class="t3">28</td>
+                    <td class="t3">X</td>
+                    <td class="t3">8,270</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n11"></td>
+                </tr>
+                <tr class="t2">
+                    <th>2</th>
+                    <td class="t3">3,716</td>
+                    <td class="t3">X</td>
+                    <td class="t3">98</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n12"></td>
+                </tr>
+                <tr class="t2">
+                    <th>3</th>
+                    <td class="t3">3,917</td>
+                    <td class="t3">X</td>
+                    <td class="t3">35</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n13"></td>
+                </tr>
+                <tr class="t2">
+                    <th>4</th>
+                    <td class="t3">350</td>
+                    <td class="t3">X</td>
+                    <td class="t3">680</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n14"></td>
+                </tr>
+                <tr class="t2">
+                    <th>5</th>
+                    <td class="t3">966</td>
+                    <td class="t3">X</td>
+                    <td class="t3">463</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n15"></td>
+                </tr>
+                <tr class="t2">
+                    <th>6</th>
+                    <td class="t3">530</td>
+                    <td class="t3">X</td>
+                    <td class="t3">742</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n16"></td>
+                </tr>
+                <tr class="t2">
+                    <th>7</th>
+                    <td class="t3">566</td>
+                    <td class="t3">X</td>
+                    <td class="t3">2,545</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n17"></td>
+                </tr>
+                <tr class="t2">
+                    <th>8</th>
+                    <td class="t3">9,722</td>
+                    <td class="t3">X</td>
+                    <td class="t3">603</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n18"></td>
+                </tr>
+                <tr class="t2">
+                    <th>9</th>
+                    <td class="t3">0.55</td>
+                    <td class="t3">X</td>
+                    <td class="t3">602.8</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n19"></td>
+                </tr>
+                <tr class="t2">
+                    <th>10</th>
+                    <td class="t3">9.5</td>
+                    <td class="t3">X</td>
+                    <td class="t3">613.5</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n20"></td>
+                </tr>
+            </table>
+            <br>
+            <label style="font-size: 18px;"><b>Divison &nbsp; Round to 2 decimal places</b></label>
+            <table class="t1">
+            <tr class="t2">
+                    <th>1</th>
+                    <td class="t3">49,449</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">933</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n21"></td>
+                </tr>
+                <tr class="t2">
+                    <th>2</th>
+                    <td class="t3">86,913</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">87</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n22"></td>
+                </tr>
+                <tr class="t2">
+                    <th>3</th>
+                    <td class="t3">28,440</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">79</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n23"></td>
+                </tr>
+                <tr class="t2">
+                    <th>4</th>
+                    <td class="t3">47,478</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">82</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n24"></td>
+                </tr>
+                <tr class="t2">
+                    <th>5</th>
+                    <td class="t3">6,08,382</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">657</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n25"></td>
+                </tr>
+                <tr class="t2">
+                    <th>6</th>
+                    <td class="t3">7,17,188</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">772</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n26"></td>
+                </tr>
+                <tr class="t2">
+                    <th>7</th>
+                    <td class="t3">5,14,368</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">564</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n27"></td>
+                </tr>
+                <tr class="t2">
+                    <th>8</th>
+                    <td class="t3">4,07,020</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">470</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n28"></td>
+                </tr>
+                <tr class="t2">
+                    <th>9</th>
+                    <td class="t3">27.6254</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">63.8</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n29"></td>
+                </tr>
+                <tr class="t2">
+                    <th>10</th>
+                    <td class="t3">1.7207</td>
+                    <td class="t3">÷</td>
+                    <td class="t3">3.57</td>
+                    <td class="t3">=</td>
+                    <td class="t3"><input type="number" id="n30"></td>
+                </tr>
+            </table><br>
+            <button onclick="input2();">Submit</button>
+            </center>
         </div>
-         <script>
-         function input1() {
-  /*document.getElementById("num").disabled = true;
-  document.getElementById("num1").disabled = true;
-  document.getElementById("num2").disabled = true;
-  document.getElementById("num3").disabled = true;
-  document.getElementById("num4").disabled = true;
-  document.getElementById("num5").disabled = true;
-  document.getElementById("num6").disabled = true;
-  document.getElementById("num7").disabled = true;
-  document.getElementById("num8").disabled = true;
-  document.getElementById("num9").disabled = true;*/
-        location.replace("testpaper1.html");
+        <script>
+         function input2() {
+        location.replace("success.html");
 }
-// countdown for 5mins
-var sec         = 300,
+// countdown for 20mins
+var sec         = 1200,
     countDiv    = document.getElementById("timer"),
     secpass,
     countDown   = setInterval(function () {
@@ -189,16 +367,36 @@ function secpass() {
         
         clearInterval(countDown);
         
-  document.getElementById("num").disabled = true;
-  document.getElementById("num1").disabled = true;
-  document.getElementById("num2").disabled = true;
-  document.getElementById("num3").disabled = true;
-  document.getElementById("num4").disabled = true;
-  document.getElementById("num5").disabled = true;
-  document.getElementById("num6").disabled = true;
-  document.getElementById("num7").disabled = true;
-  document.getElementById("num8").disabled = true;
-  document.getElementById("num9").disabled = true;
+  document.getElementById("n1").disabled = true;
+  document.getElementById("n2").disabled = true;
+  document.getElementById("n3").disabled = true;
+  document.getElementById("n4").disabled = true;
+  document.getElementById("n5").disabled = true;
+  document.getElementById("n6").disabled = true;
+  document.getElementById("n7").disabled = true;
+  document.getElementById("n8").disabled = true;
+  document.getElementById("n9").disabled = true;
+  document.getElementById("n10").disabled = true;
+  document.getElementById("n11").disabled = true;
+  document.getElementById("n12").disabled = true;
+  document.getElementById("n13").disabled = true;
+  document.getElementById("n14").disabled = true;
+  document.getElementById("n15").disabled = true;
+  document.getElementById("n16").disabled = true;
+  document.getElementById("n17").disabled = true;
+  document.getElementById("n18").disabled = true;
+  document.getElementById("n19").disabled = true;
+  document.getElementById("n20").disabled = true;
+  document.getElementById("n21").disabled = true;
+  document.getElementById("n22").disabled = true;
+  document.getElementById("n23").disabled = true;
+  document.getElementById("n24").disabled = true;
+  document.getElementById("n25").disabled = true;
+  document.getElementById("n26").disabled = true;
+  document.getElementById("n27").disabled = true;
+  document.getElementById("n28").disabled = true;
+  document.getElementById("n29").disabled = true;
+  document.getElementById("n30").disabled = true;
         
     }
 }
